@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #000;
+}
+
+.photo {
+    margin: 20px;
+
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    height: 212px;
+    width: 320px;
+}
+
+.photo__image {
+    vertical-align: bottom;
+    width: 320px;
+}
+
+.photo:hover > div {
+    top: -70px;
+}
+
+.photo__overlay {
+    background-color: rgba(150,150,150,0.5);
+    color: #fff;
+    padding: 15px;
+
+    position: relative;
+    top: 0;
+
+    height: 70px;
+
+    transition: ease-in-out 0.2s;
+}
